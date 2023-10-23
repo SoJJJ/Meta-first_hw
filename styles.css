@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-size: 16px; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header img {
+    max-width: 200px; 
+    max-height: 80px; 
+}
+
+nav {
+    font-size: 27px; 
+    background-color: #333;
+    text-align: center;
+    padding-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li {
+    flex: 1;
+    margin: 10px;
+}
+
+nav ul li a:link {
+    color: white;
+    text-decoration: none; 
+}
+
+nav ul li a:visited {
+    color: white;
+    text-decoration: none; 
+}
+
+
+#promotion {
+    background-color: whitesmoke;
+    color: rgb(66, 97, 4);
+}
+
+.mainpic {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .mainpic {
+        max-width: 100%; 
+        height: auto;
+    }
+}
+
+
+.blink {
+    color: red;
+    animation: blink 1s infinite ;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+#card-one,
+#card-two,
+#card-three {
+    flex: 1; 
+    border: 1px solid #ccc;
+    text-align: center; 
+    color: #fff; 
+    height: 200px;
+    position: relative;
+}
+
+
+#card-one:hover ,
+#card-two:hover,
+#card-three:hover {
+    background-color: Purple; 
+    border: 5px solid black; 
+}
+
+
+#card-one {
+    background-color: #ffaa00; 
+}
+
+#card-two {
+    background-color: #00aaff; 
+    
+}
+
+#card-three {
+    background-color: #6d9e0c; 
+}
+
+
+@media (max-width: 768px) {
+    #three-columns {
+        flex-direction: column;
+    }
+
+    #card-one,
+    #card-two,
+    #card-three {
+        flex: 1; 
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img {
+    max-width: 100px; 
+    max-height: 100px; 
+}
+
+#two-columns {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+#small-logo {
+    display: flex; 
+}
+
+#copyright {
+    flex: 1; 
+}
+
